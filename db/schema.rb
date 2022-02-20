@@ -10,41 +10,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_06_163846) do
+ActiveRecord::Schema.define(version: 2022_02_13_155056) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "lists", force: :cascade do |t|
-    t.string "position"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "photo_url"
+    t.text "overview"
   end
 
-  create_table "players", force: :cascade do |t|
+  create_table "looneys", force: :cascade do |t|
     t.string "name"
-    t.string "firstname"
-    t.string "birthday"
-    t.integer "weight"
-    t.integer "height"
-    t.text "description"
-    t.string "entry"
-    t.string "departure"
+    t.text "overview"
+    t.text "poster_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "list_id", null: false
+    t.index ["list_id"], name: "index_looneys_on_list_id"
   end
 
   create_table "reviews", force: :cascade do |t|
     t.text "comment"
-    t.integer "rating"
-    t.bigint "list_id", null: false
-    t.bigint "player_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "list_id", null: false
+    t.bigint "looney_id", null: false
     t.index ["list_id"], name: "index_reviews_on_list_id"
-    t.index ["player_id"], name: "index_reviews_on_player_id"
+    t.index ["looney_id"], name: "index_reviews_on_looney_id"
   end
 
+  add_foreign_key "looneys", "lists"
   add_foreign_key "reviews", "lists"
-  add_foreign_key "reviews", "players"
+  add_foreign_key "reviews", "looneys"
 end

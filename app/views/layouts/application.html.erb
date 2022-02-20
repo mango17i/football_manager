@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FootballManager</title>
+    <title>Pokétunes</title>
+    <link href="https://upload.wikimedia.org/wikipedia/fr/thumb/6/6d/Looney_Tunes_Logo.png/330px-Looney_Tunes_Logo.png" rel="shortcut icon" type="text/css">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,4 +13,12 @@
   <body>
     <%= yield %>
   </body>
+  <script>
+      const card = document.querySelector(".card-category");
+      const cardToggle = document.querySelector(".toggle");
+      cardToggle.onclick = function(){
+        card.classList.toggle("active")
+      }
+
+  </script>
 </html>

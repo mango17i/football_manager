@@ -1,0 +1,2 @@
+class LooneysController < ApplicationController
+end
