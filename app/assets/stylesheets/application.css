@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+body{
+    background:linear-gradient(to left, rgba(9, 11, 49, .9), rgba(35, 39, 87, 0.6), rgba(9, 11, 49, .9)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Flooneytunes%2Fimages%2F5%2F5d%2FLTC001-OpeningRings1.png%2Frevision%2Flatest%3Fcb%3D20200528142647&f=1&nofb=1");
+    background-size: cover;
+    background-position: top -25px right 0px;
+    background-attachment: fixed;
+}

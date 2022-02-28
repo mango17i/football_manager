@@ -9,11 +9,11 @@ end %> -->
             <span>▶</span><h2><%= list.name %></h2>
           </div>
           <div class="hidden">
-            <div class="name">
+            <div class="picture">
                 <%= image_tag(url_for(list.photo_url), class:'looney_image') %>
             </div>
-            <div class="name">
-                <%= list.overview %>
+            <div class="description">
+                <p class='overview'><%= list.overview %></p>
             </div>
           </div>
         </div>

@@ -13,24 +13,4 @@
   <body>
     <%= yield %>
   </body>
-  <script>
-        let card = document.querySelector(".card-category");
-        let cardToggle = document.querySelector(".toggle");
-        let toggleCard = document.querySelectorAll(".card-category");
-        let toggleNav = document.querySelectorAll(".toggle");
-
-      let toggleNavLength = toggleNav.length;
-      let showCard = function show(card){
-        console.log('hihi')
-      };
-          toggleNav.forEach((toggle) => {
-            toggle.addEventListener("click", (event) => {
-              console.log("hello");
-              toggleCard.forEach((element) => {
-                console.log("world");
-                element.classList.toggle("actiive");
-              });
-            });
-        });
-  </script>
 </html>
