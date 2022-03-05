@@ -1,10 +1,10 @@
 <div class="card">
-    <!-- <%def randomized_background_image
-  images = ["https://images.unsplash.com/photo-1535016120720-40c646be5580?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW92aWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60", "https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bW92aWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60", "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdmllfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60", "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1vdmllfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60", "https://images.unsplash.com/photo-1460881680858-30d872d5b530?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1vdmllfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60", "https://images.unsplash.com/photo-1513106580091-1d82408b8cd6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fG1vdmllfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60", "https://images.unsplash.com/photo-1572177191856-3cde618dee1f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fG1vdmllfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60", "https://images.unsplash.com/photo-1616530940355-351fabd9524b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG1vdmllfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60", "https://images.unsplash.com/photo-1585951237313-1979e4df7385?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fG1vdmllfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60", "https://images.unsplash.com/photo-1619099619226-f96e319e3732?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fG1vdmllfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60", "https://images.unsplash.com/photo-1508427991396-70954459dcc4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fG1vdmllfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60", "https://images.unsplash.com/photo-1518929458119-e5bf444c30f4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fG1vdmllfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60", "https://images.unsplash.com/photo-1512412632857-b93f6ecce335?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fG1vdmllfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60", "https://images.unsplash.com/photo-1618193319734-478296be37ad?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fG1vdmllfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"]
-  images[rand(images.size)]
-end %> -->
+<%= cl_image_tag("v1rhc5adlpgelzk6tvbu",
+      width: 400, height: 300, crop: :fill) %>
       <% @lists.each do |list| %>
-        <div class="card-category"> <!-- url(<%= randomized_background_image %>) -->
+      <%= cl_image_tag("gokn1lhx7anyqj0hzxvd",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
+        <div class="card-category">
           <div class="toggle">
             <span>▶</span><h2><%= list.name %></h2>
           </div>
